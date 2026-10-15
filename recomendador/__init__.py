@@ -8,13 +8,8 @@ from .modelos import (
     SVDRecomendador,
 )
 from .avaliacao import avaliar, recomendar
-
-__all__ = [
-    "ContentBased",
-    "Hibrido",
-    "ItemBasedCF",
-    "Popularidade",
-    "SVDRecomendador",
-    "avaliar",
-    "recomendar",
-]
+from .dados import (
+    gerar_dados_sinteticos,
+    matriz_usuario_item,
+    separar_treino_teste,
+)
